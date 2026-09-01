@@ -1,0 +1,177 @@
+@media (max-width:1199px) {
+    .text-xl {
+        font-size: 64px;
+    }
+
+    .about-hero__stats {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 48px;
+    }
+
+    .about-hero__heading img {
+        height: 1em;
+    }
+
+    .about-hero__car {
+        width: 55%;
+    }
+
+    .about-hero__inner {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:991px) {
+    .text-xl {
+        font-size: 55px;
+    }
+
+    .about-hero__left,
+    .about-hero__right {
+        width: 100%;
+    }
+
+    .about-hero__stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .about-hero__stat-item .item-label {
+        font-size: 20px;
+    }
+
+    .about-hero__car {
+        width: 65%;
+    }
+
+    .about-hero__inner {
+        padding-top: 60px;
+    }
+
+    .about-hero__heading {
+        max-width: 480px;
+    }
+
+
+    .about-hero__heading .image {
+        margin-left: 12px;
+    }
+}
+
+@media (max-width:767px) {
+    .text-xl {
+        font-size: 42px;
+    }
+
+    .header-site {
+        padding: 16px 0;
+    }
+
+    .cs-container {
+        padding: 0 16px;
+    }
+
+    .header-logo {
+        max-width: 145px;
+    }
+
+    .header-actions {
+        display: none !important;
+    }
+
+    .header-toggle {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        cursor: pointer;
+    }
+
+    .header-toggle span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: #222;
+        border-radius: 2px;
+
+        transition:
+            transform 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    .header-mobile-menu {
+        display: none;
+        padding-top: 20px;
+    }
+
+    .header-mobile-menu__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+
+        padding: 20px 0 8px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .header-mobile-menu .header-login {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .header-mobile-menu .btn {
+        width: 100%;
+    }
+
+    .header-toggle.is-active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .header-toggle.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header-toggle.is-active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .about-hero__heading .image {
+        margin-top: -6px;
+        margin-left: 8px;
+    }
+
+    .about-hero__stat-item .item-label {
+        font-size: 18px;
+    }
+
+    .about-hero__stats {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-hero__car {
+        width: 100%;
+    }
+
+    .about-hero__inner {
+        padding: 50px 0 160px;
+    }
+
+    .about-hero__deco {
+        bottom: -11%;
+        left: -22%;
+
+    }
+
+}

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Light.woff2') format('woff2'),
+        url('../fonts/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-LightItalic.woff2') format('woff2'),
+        url('../fonts/Inter-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Inter-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Inter-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Inter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Italic.woff2') format('woff2'),
+        url('../fonts/Inter-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+:root {
+    --color-teal: #00857A;
+    --color-gray: #F4F4F4;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    font-family: "Inter", sans-serif;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+p:last-child,
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 50px;
+    border-radius: 99px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+
+}
+
+.btn-primary {
+    background: var(--color-teal);
+    color: var(--color-gray);
+}
+
+.btn-primary:hover {
+    background: #006F66;
+}
+
+/* Custom Class */
+.text-xl {
+    font-size: 80px;
+}
+
+.body-text {
+    font-size: 16px;
+    line-height: 132%;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.text-primary {
+    color: var(--color-teal) !important;
+}
+
+.bg-gray {
+    background-color: var(--color-gray) !important;
+}
+
+.header-site {
+    z-index: 99;
+    padding: 15px 0 23px;
+}
+
+.cs-container {
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.cs-container-lg {
+    max-width: 1368px;
+}
+
+.header-logo {
+    max-width: 192px;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-login {
+    font-size: 16px;
+    color: #222222;
+}
+
+.header-actions {
+    gap: 32px;
+}
+
+.header-toggle,
+.header-mobile-menu {
+    display: none;
+}
+
+.about-hero__inner {
+    padding: 128px 0 190px;
+}
+
+.about-hero__left {
+    width: calc(58.36% - 8px);
+}
+
+.about-hero__right {
+    width: calc(41.64% - 8px);
+}
+
+.about-hero__heading {
+    letter-spacing: -2.75px;
+    max-width: 630px;
+    margin-top: -8px;
+}
+
+.about-hero__heading img {
+    height: 75px;
+}
+
+.about-hero__heading .image {
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: -12px;
+}
+
+
+
+.about-hero__heading .image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #00857A;
+    mix-blend-mode: screen;
+}
+
+
+
+.about-hero__stats {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-gap: 28px;
+    margin-top: 80px;
+}
+
+.about-hero__stat-item .item-value {
+    line-height: 1.25;
+    letter-spacing: -2.75px;
+}
+
+.about-hero__stat-item .item-label {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+    margin-top: 8px;
+}
+
+.about-hero__deco {
+    position: absolute;
+    bottom: -20%;
+    left: -42%;
+}
+
+.about-hero__car {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    width: 50.5%;
+}
