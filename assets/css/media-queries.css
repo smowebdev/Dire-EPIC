@@ -7,8 +7,13 @@
         font-size: 60px;
     }
 
-    .about-teams__heading {
+    .section-heading {
         font-size: 58px;
+    }
+
+    .cta-heading {
+        font-size: 70px;
+        line-height: 1.2;
     }
 
     .about-hero__stats {
@@ -35,6 +40,10 @@
 
     .about-careers__box {
         padding: 60px 20px;
+    }
+
+    .cta-box {
+        padding: 100px 60px;
     }
 }
 
@@ -125,9 +134,34 @@
         gap: 48px 8px;
     }
 
-    .about-teams__heading {
+    .section-heading {
         font-size: 48px;
+        line-height: 1.2;
         margin-bottom: 50px;
+    }
+
+    .advisory-council-sec .about-teams__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .investment-team__list {
+        gap: 40px;
+    }
+
+    .investment-team-sec .section-heading {
+        margin-bottom: 48px;
+    }
+
+    .cta-box {
+        padding: 60px 20px;
+    }
+
+    .cta-heading {
+        font-size: 60px;
+    }
+
+    .cta-desc {
+        font-size: 22px;
     }
 }
 
@@ -146,6 +180,10 @@
 
     .text-header-4 {
         font-size: 20px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
     }
 
     .header-site {
@@ -337,8 +375,48 @@
         padding: 60px 0;
     }
 
-    .about-teams__heading {
-        font-size: 42px;
+    .section-heading {
+        font-size: 40px;
         margin-bottom: 32px;
+    }
+
+    .board-directors-sec,
+    .advisory-council-sec {
+        padding: 60px 0;
+    }
+
+    .advisory-council-sec .about-teams__list {
+        grid-template-columns: 1fr;
+    }
+
+    .investment-team__list {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .cta-box .box-left,
+    .cta-box .box-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cta-heading {
+        font-size: 48px;
+    }
+
+    .cta-box {
+        gap: 30px;
+    }
+
+    .cta-desc {
+        font-size: 20px;
+    }
+
+    .cta-btns {
+        margin-top: 30px;
+    }
+
+    .cta-sec {
+        padding-bottom: 80px;
     }
 }
