@@ -3,6 +3,14 @@
         font-size: 64px;
     }
 
+    .about-careers__heading {
+        font-size: 60px;
+    }
+
+    .about-teams__heading {
+        font-size: 58px;
+    }
+
     .about-hero__stats {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -24,6 +32,10 @@
     .about-culture__left {
         padding-right: 80px;
     }
+
+    .about-careers__box {
+        padding: 60px 20px;
+    }
 }
 
 @media (max-width:991px) {
@@ -34,6 +46,10 @@
     .text-header-2 {
         font-size: 40px;
         line-height: 1.2
+    }
+
+    .text-header-3 {
+        font-size: 28px;
     }
 
     .text-header-4 {
@@ -83,6 +99,36 @@
     .about-culture__desc {
         margin-top: 24px;
     }
+
+    .about-careers__desc {
+        font-size: 18px;
+    }
+
+    .about-careers__box .box-left {
+        padding-right: 32px;
+        width: 50%;
+    }
+
+    .about-careers__box .box-right {
+        width: 50%;
+    }
+
+    .about-careers__heading {
+        font-size: 50px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .about-teams__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px 8px;
+    }
+
+    .about-teams__heading {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width:767px) {
@@ -92,6 +138,10 @@
 
     .text-header-2 {
         font-size: 36px;
+    }
+
+    .text-header-3 {
+        font-size: 24px;
     }
 
     .text-header-4 {
@@ -252,5 +302,43 @@
     .faq-icon {
         width: 24px;
         height: 24px;
+    }
+
+    .about-careers__box .box-left,
+    .about-careers__box .box-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-careers__heading {
+        margin-bottom: 16px;
+        font-size: 42px;
+    }
+
+    .about-careers-sec {
+        padding: 60px 0;
+    }
+
+    .about-careers__box {
+        padding: 40px 20px;
+    }
+
+    .about-careers__deco {
+        top: 0;
+        right: -10%;
+    }
+
+    .about-teams__list {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-teams-sec {
+        padding: 60px 0;
+    }
+
+    .about-teams__heading {
+        font-size: 42px;
+        margin-bottom: 32px;
     }
 }
