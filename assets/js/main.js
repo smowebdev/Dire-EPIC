@@ -1,18 +1,15 @@
 $(document).ready(function () {
-  $(".header-toggle").on("click", function () {
-    const $this = $(this);
-    const $menu = $(".header-mobile-menu");
+  $(".header-toggle").on("click", function (e) {
+    e.stopPropagation();
 
-    $this.toggleClass("is-active");
+    $(".header-mobile-menu").toggleClass("active");
+  });
 
-    const isOpen = $this.hasClass("is-active");
+  $(".header-mobile-menu").on("click", function (e) {
+    e.stopPropagation();
+  });
 
-    $this.attr("aria-expanded", isOpen);
-
-    if (isOpen) {
-      $menu.stop(true, true).slideDown(250);
-    } else {
-      $menu.stop(true, true).slideUp(250);
-    }
+  $(document).on("click", function () {
+    $(".header-mobile-menu").removeClass("active");
   });
 });
