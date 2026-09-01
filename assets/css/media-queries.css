@@ -163,6 +163,15 @@
     .cta-desc {
         font-size: 22px;
     }
+
+    .client-logos__item {
+        margin: 0 20px;
+    }
+
+    .client-logos-sec::before,
+    .client-logos-sec::after {
+        width: 120px;
+    }
 }
 
 @media (max-width:767px) {
@@ -418,5 +427,21 @@
 
     .cta-sec {
         padding-bottom: 80px;
+    }
+
+    .client-logos-sec {
+        padding: 48px 0;
+    }
+
+    .client-logos__item {
+        margin: 0 16px;
+    }
+
+    .client-logos-sec::before,
+    .client-logos-sec::after {
+        width: 80px;
+        height: 100px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

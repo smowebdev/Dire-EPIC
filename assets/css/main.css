@@ -103,12 +103,18 @@ p:last-of-type {
 
 .btn-primary:hover {
     background: #006F66;
+    border-color: #006F66;
 
 }
 
 .btn-black-secondary {
     color: #000;
     border-color: #000;
+}
+
+.btn-black-secondary:hover {
+    background: #000;
+    color: #fff;
 }
 
 /* Custom Class */
@@ -541,4 +547,81 @@ p:last-of-type {
 
 .cta-btns {
     margin-top: 36px;
+}
+
+.client-logos-sec {
+    padding: 64px 0 75px;
+}
+
+.client-logos-sec::before,
+.client-logos-sec::after {
+    content: "";
+    position: absolute;
+    width: 144px;
+    height: 120px;
+    top: 24px;
+    pointer-events: none;
+}
+
+.client-logos-sec::before {
+    left: 0;
+    background: linear-gradient(90deg, #FFFFFF 12%, rgba(255, 255, 255, 0) 100%);
+}
+
+.client-logos-sec::after {
+    right: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 69%);
+}
+
+.client-logos__inner {
+    height: 40px;
+}
+
+.client-logos__track {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    animation: clientLogoScroll 25s linear infinite;
+}
+
+.client-logos__group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.client-logos__item {
+    width: 140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 31.5px;
+    flex-shrink: 0;
+}
+
+.client-logos__item img {
+    display: block;
+    width: auto;
+    max-width: 115px;
+    max-height: 30px;
+    object-fit: contain;
+}
+
+@keyframes clientLogoScroll {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.client-logos__inner:hover .client-logos__track {
+    animation-play-state: paused;
+}
+
+.footer-site {
+    padding: 60px 0 20px;
 }
