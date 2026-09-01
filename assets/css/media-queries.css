@@ -1,5 +1,5 @@
 @media (max-width:1199px) {
-    .text-xl {
+    .text-header-1 {
         font-size: 64px;
     }
 
@@ -20,11 +20,24 @@
     .about-hero__inner {
         padding-top: 100px;
     }
+
+    .about-culture__left {
+        padding-right: 80px;
+    }
 }
 
 @media (max-width:991px) {
-    .text-xl {
+    .text-header-1 {
         font-size: 55px;
+    }
+
+    .text-header-2 {
+        font-size: 40px;
+        line-height: 1.2
+    }
+
+    .text-header-4 {
+        font-size: 22px;
     }
 
     .about-hero__left,
@@ -39,7 +52,7 @@
     }
 
     .about-hero__stat-item .item-label {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .about-hero__car {
@@ -58,11 +71,31 @@
     .about-hero__heading .image {
         margin-left: 12px;
     }
+
+    .about-culture__left {
+        padding-right: 48px;
+    }
+
+    .faq-question {
+        font-size: 22px;
+    }
+
+    .about-culture__desc {
+        margin-top: 24px;
+    }
 }
 
 @media (max-width:767px) {
-    .text-xl {
+    .text-header-1 {
         font-size: 42px;
+    }
+
+    .text-header-2 {
+        font-size: 36px;
+    }
+
+    .text-header-4 {
+        font-size: 20px;
     }
 
     .header-site {
@@ -190,4 +223,29 @@
 
     }
 
+    .about-culture-sec {
+        padding: 60px 0;
+    }
+
+    .about-culture__left,
+    .about-culture__right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-culture__inner {
+        gap: 48px;
+    }
+
+    .about-culture__desc {
+        margin-top: 16px;
+    }
+
+    .faq-question {
+        font-size: 20px;
+    }
+
+    .faq-answer p {
+        font-size: 16px;
+    }
 }

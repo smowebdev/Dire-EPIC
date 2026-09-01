@@ -1,101 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Light.woff2') format('woff2'),
-        url('../fonts/Inter-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-LightItalic.woff2') format('woff2'),
-        url('../fonts/Inter-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Medium.woff2') format('woff2'),
-        url('../fonts/Inter-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Inter-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
-        url('../fonts/Inter-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
-        url('../fonts/Inter-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-SemiBoldItalic.woff2') format('woff2'),
-        url('../fonts/Inter-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
-        url('../fonts/Inter-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-BoldItalic.woff2') format('woff2'),
-        url('../fonts/Inter-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter-Italic.woff2') format('woff2'),
-        url('../fonts/Inter-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-
-
-
 :root {
     --color-teal: #00857A;
     --color-gray: #F4F4F4;
+    --color-dark-green: #004E22;
 }
 
 *,
@@ -195,8 +101,21 @@ p:last-of-type {
 }
 
 /* Custom Class */
-.text-xl {
+.text-header-1 {
     font-size: 80px;
+    letter-spacing: -2.75px;
+}
+
+.text-header-2 {
+    font-size: 48px;
+    letter-spacing: -0.38px;
+    line-height: 67px;
+}
+
+.text-header-4 {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.24px;
 }
 
 .body-text {
@@ -214,6 +133,10 @@ p:last-of-type {
 
 .bg-gray {
     background-color: var(--color-gray) !important;
+}
+
+.bg-dark-green {
+    background-color: var(--color-dark-green) !important;
 }
 
 .header-site {
@@ -323,4 +246,95 @@ p:last-of-type {
     bottom: 0%;
     left: 1%;
     width: 50.5%;
+}
+
+.about-culture-sec {
+    padding: 80px 0;
+}
+
+.about-culture__left {
+    width: 50.7%;
+    padding-right: 156px;
+}
+
+.about-culture__right {
+    width: 49.3%;
+}
+
+.about-culture__desc {
+    margin-top: 40px;
+}
+
+.faq-list {}
+
+.faq-item {
+    border-top: 1px solid var(--color-teal);
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid var(--color-teal);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px 0;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.24px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.faq-icon {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.faq-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 10px;
+    height: 1px;
+
+    background: #fff;
+    transform: translate(-50%, -50%);
+
+    transition: transform 0.3s ease;
+}
+
+.faq-icon span:last-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-answer {
+    display: none;
+    overflow: hidden;
+}
+
+.faq-answer-inner {
+    padding: 0 25px 18px 0;
+}
+
+.faq-answer p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-icon span:last-child {
+    transform: translate(-50%, -50%) rotate(0deg);
 }
