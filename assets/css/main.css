@@ -117,6 +117,16 @@ p:last-of-type {
     color: #fff;
 }
 
+.btn-white-secondary {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-white-secondary:hover {
+    background: #000;
+    color: #fff;
+}
+
 /* Custom Class */
 .text-header-1 {
     font-size: 80px;
@@ -162,6 +172,14 @@ p:last-of-type {
 
 .text-primary {
     color: var(--color-teal) !important;
+}
+
+.text-white-light {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-teal {
+    background-color: var(--color-teal) !important;
 }
 
 .bg-gray {
@@ -623,5 +641,126 @@ p:last-of-type {
 }
 
 .footer-site {
-    padding: 60px 0 20px;
+    padding: 50px 0 32px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.1fr;
+    grid-gap: 32px;
+}
+
+.footer-logo {
+    max-width: 147px;
+}
+
+.footer-contact-infos {
+    font-size: 16px;
+    gap: 10px;
+}
+
+.footer-socials__item {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.accredited-business-logo img {
+    max-height: 48px;
+}
+
+.footer-about p {
+    font-size: 18px;
+    line-height: 1.32;
+    max-width: 240px;
+}
+
+.footer-title {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.footer-desc {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.32;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-menu ul li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-menu ul li a:hover {
+    color: #fff;
+}
+
+.footer-menus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.footer-industry-alliances {
+    margin-top: 50px;
+}
+
+
+.footer-industry-alliances__logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.footer-industry-alliances__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-security__logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    max-width: 250px;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.32;
+}
+
+.chat-button {
+    z-index: 9999;
+    right: 16px;
+    bottom: 24px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0px 2px 12px 0px #00000033, 0px 1px 4px 0px #0000001A;
+    transition:
+        all 0.3s ease;
+}
+
+.chat-button img {
+    width: 32px;
+}
+
+.chat-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }

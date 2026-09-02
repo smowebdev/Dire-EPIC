@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(".header-toggle").on("click", function (e) {
     e.stopPropagation();
-
+    $(this).toggleClass("is-active");
     $(".header-mobile-menu").toggleClass("active");
   });
 

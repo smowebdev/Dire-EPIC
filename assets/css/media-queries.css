@@ -45,6 +45,15 @@
     .cta-box {
         padding: 100px 60px;
     }
+
+    .footer-industry-alliances__logos,
+    .footer-menus {
+        gap: 24px;
+    }
+
+    .footer-security__logos {
+        gap: 12px;
+    }
 }
 
 @media (max-width:991px) {
@@ -172,6 +181,10 @@
     .client-logos-sec::after {
         width: 120px;
     }
+
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width:767px) {
@@ -231,7 +244,7 @@
         display: block;
         width: 24px;
         height: 2px;
-        background: #222;
+        background: var(--color-teal);
         border-radius: 2px;
 
         transition:
@@ -443,5 +456,30 @@
         height: 100px;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .footer-industry-alliances__logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-menus {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 24px;
+    }
+
+    .chat-button {
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        bottom: 20px;
+    }
+
+    .chat-button img {
+        width: 24px;
     }
 }
