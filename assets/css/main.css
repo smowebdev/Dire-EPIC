@@ -159,6 +159,13 @@ p:last-of-type {
     padding: 80px 0;
 }
 
+.section-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
 .section-heading {
     font-size: 60.8px;
     line-height: 66.88px;
@@ -232,7 +239,7 @@ p:last-of-type {
 }
 
 .about-hero__inner {
-    padding: 128px 0 190px;
+    padding: 225px 0 190px;
 }
 
 .about-hero__left {
@@ -253,21 +260,25 @@ p:last-of-type {
     height: 75px;
 }
 
-.about-hero__heading .image {
+.about-hero__heading .cs-heading-image {
     vertical-align: middle;
     margin-left: 20px;
     margin-top: -12px;
 }
 
+.cs-heading-image {
+    position: relative;
+    display: inline-block;
+}
 
-
-.about-hero__heading .image::before {
+.cs-heading-image::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: #00857A;
     mix-blend-mode: screen;
 }
+
 
 
 
@@ -292,8 +303,8 @@ p:last-of-type {
 
 .about-hero__deco {
     position: absolute;
-    bottom: -20%;
-    left: -42%;
+    bottom: -17%;
+    left: -41%;
 }
 
 .about-hero__car {
@@ -763,4 +774,44 @@ p:last-of-type {
 .chat-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Careers Page */
+.careers-hero {
+    min-height: 826px;
+}
+
+.careers-join-team-sec {
+    padding: 70px 0 80px;
+}
+
+.careers-join-team__left {
+    width: 59.2%;
+    padding-right: 80px;
+}
+
+.careers-join-team__right {
+    width: 40.8%;
+}
+
+
+.careers-join-team-sec .cs-heading-image img {
+    height: 75px;
+}
+
+.careers-join-team__btn {
+    margin-top: 52px;
+}
+
+.careers-culture-sec {
+    padding: 66px 0;
+}
+
+.careers-culture__left {
+    width: 50.3%;
+    padding-right: 134px;
+}
+
+.careers-culture__right {
+    width: 49.7%;
 }

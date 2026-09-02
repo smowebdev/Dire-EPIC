@@ -31,7 +31,7 @@
     }
 
     .about-hero__inner {
-        padding-top: 100px;
+        padding-top: 200px;
     }
 
     .about-culture__left {
@@ -53,6 +53,18 @@
 
     .footer-security__logos {
         gap: 12px;
+    }
+
+    .careers-join-team-sec .cs-heading-image img {
+        height: 60px;
+    }
+
+    .careers-join-team__left {
+        padding-right: 50px;
+    }
+
+    .careers-culture__left {
+        padding-right: 80px;
     }
 }
 
@@ -94,7 +106,7 @@
     }
 
     .about-hero__inner {
-        padding-top: 60px;
+        padding-top: 160px;
     }
 
     .about-hero__heading {
@@ -102,7 +114,7 @@
     }
 
 
-    .about-hero__heading .image {
+    .about-hero__heading .cs-heading-image {
         margin-left: 12px;
     }
 
@@ -184,6 +196,18 @@
 
     .footer-main {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .careers-join-team-sec .cs-heading-image img {
+        height: 52px;
+    }
+
+    .careers-hero {
+        min-height: 70vh;
+    }
+
+    .careers-culture__left {
+        padding-right: 40px;
     }
 }
 
@@ -305,7 +329,7 @@
         transform: translateY(-7px) rotate(-45deg);
     }
 
-    .about-hero__heading .image {
+    .about-hero__heading .cs-heading-image {
         margin-top: -6px;
         margin-left: 8px;
     }
@@ -324,7 +348,7 @@
     }
 
     .about-hero__inner {
-        padding: 50px 0 160px;
+        padding: 120px 0 160px;
     }
 
     .about-hero__deco {
@@ -481,5 +505,41 @@
 
     .chat-button img {
         width: 24px;
+    }
+
+    .careers-join-team__left,
+    .careers-join-team__right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .careers-join-team__inner {
+        gap: 24px;
+    }
+
+    .careers-join-team__btn {
+        margin-top: 32px;
+    }
+
+    .careers-join-team-sec {
+        padding: 40px 0 60px;
+    }
+
+    .careers-join-team-sec .cs-heading-image img {
+        height: 40px;
+    }
+
+    .careers-culture__left,
+    .careers-culture__right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .careers-culture__inner {
+        gap: 32px;
+    }
+
+    .careers-culture-sec {
+        padding: 60px 0;
     }
 }
