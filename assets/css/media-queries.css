@@ -63,8 +63,12 @@
         padding-right: 50px;
     }
 
-    .careers-culture__left {
+    .careers-layout__left {
         padding-right: 80px;
+    }
+
+    .careers-layout-reverse-sec .careers-layout__left {
+        padding-left: 80px;
     }
 }
 
@@ -75,7 +79,6 @@
 
     .text-header-2 {
         font-size: 40px;
-        line-height: 1.2
     }
 
     .text-header-3 {
@@ -206,8 +209,40 @@
         min-height: 70vh;
     }
 
-    .careers-culture__left {
+    .careers-layout__left {
         padding-right: 40px;
+    }
+
+    .careers-layout-reverse-sec .careers-layout__left {
+        padding-left: 40px;
+    }
+
+    .careers-teams__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .careers-teams__card .card-icon {
+        padding: 40px 24px;
+    }
+
+    .careers-teams__card .card-content {
+        padding: 24px 24px 48px;
+    }
+
+    .careers-teams-sec {
+        padding: 80px 0 100px;
+    }
+
+    .career-opportunities-sec {
+        padding: 100px 0;
+    }
+
+    .career-opportunities__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career-opportunities__card {
+        padding: 20px;
     }
 }
 
@@ -529,17 +564,50 @@
         height: 40px;
     }
 
-    .careers-culture__left,
-    .careers-culture__right {
+    .careers-layout__left,
+    .careers-layout__right {
         width: 100%;
         padding: 0;
     }
 
-    .careers-culture__inner {
+    .careers-layout-reverse-sec .careers-layout__left {
+        padding: 0;
+    }
+
+    .careers-layout__inner {
         gap: 32px;
     }
 
-    .careers-culture-sec {
+    .careers-layout-sec {
         padding: 60px 0;
     }
+
+    .careers-teams__list {
+        grid-template-columns: 1fr;
+    }
+
+    .careers-teams__card .card-content {
+        padding: 20px 20px 40px;
+    }
+
+    .careers-teams__card .card-icon {
+        padding: 32px 20px;
+    }
+
+    .careers-teams-sec {
+        padding: 60px 0 80px;
+    }
+
+    .careers-teams__heading {
+        margin-bottom: 40px;
+    }
+
+    .career-opportunities__list {
+        grid-template-columns: 1fr;
+    }
+
+    .career-opportunities-sec {
+        padding: 60px 0 80px;
+    }
+
 }

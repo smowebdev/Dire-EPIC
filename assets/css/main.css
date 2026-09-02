@@ -136,7 +136,7 @@ p:last-of-type {
 .text-header-2 {
     font-size: 48px;
     letter-spacing: -0.38px;
-    line-height: 67px;
+    line-height: 1.125;
 }
 
 .text-header-3 {
@@ -322,6 +322,10 @@ p:last-of-type {
 
 .about-culture__right {
     width: 49.3%;
+}
+
+.about-culture__heading {
+    line-height: 1.4;
 }
 
 .about-culture__desc {
@@ -803,15 +807,122 @@ p:last-of-type {
     margin-top: 52px;
 }
 
-.careers-culture-sec {
+.careers-layout-sec {
     padding: 66px 0;
 }
 
-.careers-culture__left {
+.careers-layout__left {
     width: 50.3%;
     padding-right: 134px;
 }
 
-.careers-culture__right {
+.careers-layout-reverse-sec .careers-layout__left {
+    padding-left: 134px;
+    padding-right: 0;
+}
+
+.careers-layout__right {
     width: 49.7%;
+}
+
+.careers-teams-sec {
+    padding: 115px 0 117px;
+}
+
+.careers-teams__heading {
+    margin-bottom: 44px;
+}
+
+.careers-teams__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.careers-teams__card {
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px 0px #00000040;
+    background: #fff;
+}
+
+.careers-teams__card .card-icon {
+    padding: 66px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers-teams__card .card-icon img {
+    width: 112px;
+    height: 112px;
+    object-fit: contain;
+}
+
+.careers-teams__card .card-content {
+    padding: 32px 32px 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.career-opportunities-sec {
+    padding: 126px 0;
+}
+
+.career-opportunities__header {
+    margin-bottom: 40px;
+}
+
+.career-opportunities__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.career-opportunities__card {
+    min-height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 0px #00000040;
+    padding: 16px 22px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.career-opportunities__card .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
+.career-opportunities__card .card-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.career-opportunities__card .card-role {
+    font-weight: 600;
+}
+
+.career-opportunities__card .card-locations {
+    display: flex;
+    gap: 8px;
+}
+
+.career-opportunities__card .card-locations img {
+    flex-shrink: 0;
+    width: 24px;
+}
+
+.career-opportunities__card .card-btn {
+    padding: 8px 27px;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
 }
