@@ -258,6 +258,10 @@
         width: 100%;
         padding: 0;
     }
+
+    .privacy-main-sec {
+        padding-top: 160px;
+    }
 }
 
 @media (max-width:767px) {
@@ -525,7 +529,7 @@
     }
 
     .client-logos__item {
-        margin: 0 16px;
+        margin: 0 8px;
     }
 
     .client-logos-sec::before,
@@ -635,5 +639,21 @@
 
     .contact-main__heading {
         margin-bottom: 20px;
+    }
+
+    .privacy-main__heading {
+        margin-bottom: 30px;
+    }
+
+    .privacy-main__header {
+        margin-bottom: 70px;
+    }
+
+    .privacy-main__infos {
+        margin-top: 60px;
+    }
+
+    .privacy-main-sec {
+        padding: 120px 0 80px;
     }
 }
