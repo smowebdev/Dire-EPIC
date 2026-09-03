@@ -625,9 +625,6 @@ p:last-of-type {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 69%);
 }
 
-.client-logos__inner {
-    height: 40px;
-}
 
 .client-logos__track {
     display: flex;
@@ -655,8 +652,7 @@ p:last-of-type {
 .client-logos__item img {
     display: block;
     width: auto;
-    max-width: 115px;
-    max-height: 30px;
+    max-height: 40px;
     object-fit: contain;
 }
 
