@@ -926,3 +926,25 @@ p:last-of-type {
     font-family: "Inter", sans-serif;
     line-height: 1;
 }
+
+/* Contact Page */
+.contact-main-sec {
+    padding: 173px 0 106px;
+}
+
+.contact-main__left {
+    width: 50.45%;
+    padding-right: 109px;
+}
+
+.contact-main__right {
+    width: 49.55%;
+}
+
+.contact-main__heading {
+    margin-bottom: 32px;
+}
+
+.contact-main-sec .section-label {
+    margin-bottom: 12px;
+}

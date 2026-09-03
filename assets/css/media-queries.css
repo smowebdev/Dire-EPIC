@@ -70,6 +70,10 @@
     .careers-layout-reverse-sec .careers-layout__left {
         padding-left: 80px;
     }
+
+    .contact-main__left {
+        padding-right: 80px;
+    }
 }
 
 @media (max-width:991px) {
@@ -244,6 +248,16 @@
     .career-opportunities__card {
         padding: 20px;
     }
+
+    .contact-main__inner {
+        gap: 48px;
+    }
+
+    .contact-main__left,
+    .contact-main__right {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 @media (max-width:767px) {
@@ -265,6 +279,11 @@
 
     .section-padding {
         padding: 60px 0;
+    }
+
+    .section-label {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
     .header-site {
@@ -610,4 +629,11 @@
         padding: 60px 0 80px;
     }
 
+    .contact-main-sec {
+        padding: 120px 0 80px;
+    }
+
+    .contact-main__heading {
+        margin-bottom: 20px;
+    }
 }
