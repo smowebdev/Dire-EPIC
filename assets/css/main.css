@@ -77,7 +77,6 @@ p:last-of-type {
 
 .btn {
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.32px;
@@ -105,6 +104,18 @@ p:last-of-type {
     background: #006F66;
     border-color: #006F66;
 
+}
+
+.btn-black {
+    color: #fff;
+    background: #000;
+    border-color: #000;
+}
+
+.btn-black:hover {
+    background: var(--color-teal);
+    border-color: var(--color-teal);
+    color: #fff;
 }
 
 .btn-black-secondary {
@@ -235,6 +246,10 @@ p:last-of-type {
 
 .header-actions {
     gap: 32px;
+}
+
+.header-actions .btn {
+    font-family: "Montserrat", sans-serif;
 }
 
 .header-toggle,
@@ -765,6 +780,16 @@ p:last-of-type {
     max-width: 250px;
 }
 
+.footer-security__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-security__logo img {
+    max-height: 80px;
+}
+
 .footer-copyright {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
@@ -993,4 +1018,110 @@ p:last-of-type {
     gap: 16px;
     padding-left: 20px;
     margin: 0;
+}
+
+/* Trust Center Page */
+.trust-center-hero {
+    padding: 132px 0 67px;
+}
+
+.trust-center-hero__inner {
+    gap: 80px;
+}
+
+.trust-center-hero__content {
+    max-width: 544px;
+}
+
+.trust-center-hero__image {
+    max-width: 466px;
+    min-width: 320px;
+}
+
+.trust-center-content-sec {
+    padding-bottom: 105px;
+}
+
+.trust-center-content {
+    gap: 80px;
+    padding-bottom: 56px;
+    margin-bottom: 56px;
+    border-bottom: 1px solid var(--color-teal);
+}
+
+.trust-center-content:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.trust-center-content__left {
+    width: 327px;
+    position: sticky;
+    top: 110px;
+}
+
+.trust-center-content__right {
+    width: calc(100% - 327px - 80px);
+}
+
+.trust-center-content__note {
+    gap: 12px;
+    font-size: 14px;
+    line-height: 180%;
+    padding: 10px 15px;
+    border-radius: 99px;
+    border: 1px solid var(--color-teal);
+    background: #fff;
+}
+
+.trust-center-content__note .dot {
+    width: 14px;
+    height: 14px;
+}
+
+
+.trust-center-content__monitoring-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.trust-center-content__monitoring-item ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.trust-center-content__monitoring-item ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.5px;
+    width: 18px;
+    height: 18px;
+    background: url('../images/check-icon.svg') no-repeat center / contain;
+}
+
+.trust-center-content__compliance {
+    display: grid;
+    grid-template-columns: 190px 190px 190px;
+    grid-gap: 56px;
+    justify-content: space-between;
+    margin-left: -22px;
+}
+
+.trust-center-content__compliance-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.trust-center-content__compliance-item .item-title {
+    margin-top: 3px;
+}
+
+.trust-center-content__compliance-item .item-logo {
+    max-height: 140px;
 }

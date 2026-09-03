@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // Toggle Menu - Start
   $(".header-toggle").on("click", function (e) {
     e.stopPropagation();
     $(this).toggleClass("is-active");
@@ -12,6 +13,9 @@ $(document).ready(function () {
   $(document).on("click", function () {
     $(".header-mobile-menu").removeClass("active");
   });
+  // Toggle Menu - End
+
+  // Faq Accordion - Start
   $(".faq-question").on("click", function () {
     const $item = $(this).closest(".faq-item");
     const $answer = $item.find(".faq-answer");
@@ -27,4 +31,5 @@ $(document).ready(function () {
 
     $answer.stop(true, true).slideToggle(300);
   });
+  // Faq Accordion - End
 });
